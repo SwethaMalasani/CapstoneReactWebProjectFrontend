@@ -1,0 +1,77 @@
+.employee-page {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  .employee{
+    align-items: center;
+    width: 40%;
+    display: block;
+  }
+  h2 {
+    color: #333;
+  }
+  
+  .create-employee, .employee-list {
+    margin-top: 40px;
+    align-items: center;
+  }
+ 
+  .create-employee form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .search-container{
+    max-width: 20px;
+  }
+  
+  .create-employee form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .create-employee form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-bar {
+    padding: 8px;
+    width: 50%;
+    max-width: 100px; /* Adjust width as needed */
+    margin-bottom: 20px;
+  }
+  .employee-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .employee-list li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  button:active {
+    background-color: #1e7e34;
+  }
+  

@@ -1,0 +1,37 @@
+body{
+    background-color: lightsalmon;
+    }
+.login {
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+  }
+  .login h2 {
+    color: #333;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 1px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: black;
+  }
+  

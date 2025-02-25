@@ -1,0 +1,71 @@
+body{
+background-color: peru;
+}
+html, body, .Homescreen {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.home {
+  flex-grow: 1;
+  display: block;
+  align-items: right; /* Center content vertically */
+  justify-content: right; /* Center content horizontally */
+  background-color: peru;
+  /* background-image: url("https://media0.giphy.com/media/xTiTnpVDp86JbFCdzi/source.gif"); */
+  /* background-image: url("https://numla.com/web/image/3168-968af6f0/dashboards_header.gif"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 50vh; /* Full viewport height */
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  background-color: peru;
+  text-align: center;
+  height: 100%;
+  padding: 80px 20px 60px; /* Top padding matches header height */
+}
+#root {
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
