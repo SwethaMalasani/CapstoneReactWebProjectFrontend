@@ -59,8 +59,7 @@ Delete         : User can Delete the employee and will be removed from employees
 
 
 
-## Trello Planning
-* Link to trello or planning board - ex: https://trello.com/b/2jeHdFcV/project-1-connect-4
+
 
 ## <a name="design"></a>Design
 * Descrition of what inspired your design. Ex: Design elements implemented using HTML5 and CSS3. 
