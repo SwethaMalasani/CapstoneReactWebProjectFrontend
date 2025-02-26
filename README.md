@@ -71,6 +71,7 @@ HR portal using HTML and CSS, ReactJs and saving the same into MongoDB No SQL da
 
 ## ERD Images & DB Structure
 * Embeded ERD Images
+<img src="./src/images/dbstructure.JPG" alt="HR Management Home Screen"/>
 #Images used in project.
  <img src="https://primepay.com/wp-content/uploads/Growing-Wheel-PP-10.25.24.gif" alt="HR Management" />
  <img src="https://cdnl.iconscout.com/lottie/premium/thumb/human-resources-department-animation-download-in-lottie-json-gif-static-svg-file-formats--candidate-pack-business-animations-9665233.gif" alt="Employee Engagement" />
