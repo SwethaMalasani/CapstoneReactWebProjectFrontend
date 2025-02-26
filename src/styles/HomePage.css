@@ -1,79 +1,120 @@
+/* Reset default padding and margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* Full-screen homepage */
+.homepagesscren {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background-size: cover;
+}
+
+/* Home section */
 .home {
-  padding: 10px;
-  /* height: 10%; */
-  display: flex; /* Enables side-by-side layout */
-  /*align-items: center; /* Centers items vertically */
-  justify-content: space-between; /* Pushes image left, text right */
-  /*gap: 20px; /* Space between image and text */
-  text-align: right;
-    align-items: right;
-}
-.hrmainimage {
-  max-width: 1300px;
-  /* width: 100%; */
-  height: auto;
-}
-  .home h1 {
-    color: black;
-    font-size: medium;
-  }
-  .nav-links {
-    margin-top: 20px;
-  }
-
-  .home>img{
-    max-width: 600px;
-  }
-
-
-.imagesonportal{
   display: flex;
-  justify-content:space-between;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  text-align: center; /* Ensures text is centered */
+  width: 100vw;
+  height: 100vh;
+  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkBv-p8bEUjPcqb1c1AmEgXNI3wVA4S3AGA&s") no-repeat center center/cover; */
+  padding: 0;
+  margin: 0;
+  position: relative;
 }
-.venus{
+
+.homeimage h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+.homeimage p {
+  font-size: 1.2rem;
+  color: rebeccapurple;
+  font-weight: bold;
+}
+
+.nav-links {
+  margin-top: 20px;
+}
+
+.nav-links .btn {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.nav-links .btn:hover {
+  background-color: palegreen;
+}
+
+/* HR Section */
+.hr-section {
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+  background-color: peru;
+}
+
+.hr-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hr-section p {
+  font-size: 1rem;
+  color: black;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+/* HR Images */
+.hr-images {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 0;
 }
-  .nav-links .btn {
-    text-decoration: none;
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    align-items: left;
-    font-weight: bold;
-  }
-  .nav-links .btn:hover {
-    background-color: palegreen;
-  }
-  p{
-    color: rebeccapurple;
-    font-weight: bolder;
-  }
-  .hr-images {
-    display: flex;
-    justify-content: center; /* Centers images horizontally */
-    flex-wrap: wrap; /* Allows images to wrap if they don't fit */
-    gap: 10px; /* Adds spacing between images */
-    padding: 10px 0; /* Adds padding to prevent overlap */
-  }
-  
-  .hr-images img {
-    /*max-width: 1000px; /* Set a consistent max width */
-    height: 250px; /* Set a consistent height */
-    object-fit: cover; /* Ensures uniformity without distortion */
-    border-radius: 5px;
-    display: flex;
+
+.hr-images img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
 }
-  
-  .hr-section {
-    text-align: center;
-    padding-bottom: 50px; /* Adds space to prevent overlap with footer */
-  }
-  .homepagesscren{
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  .home {
     height: auto;
+    padding: 40px 20px;
   }
-  .hr-section p{
-    color: black;
+
+  .homeimage h1 {
+    font-size: 1.5rem;
   }
+
+  .homeimage p {
+    font-size: 1rem;
+  }
+
+  .hr-section {
+    padding: 20px;
+  }
+
+  .hr-images img {
+    height: 180px;
+  }
+}

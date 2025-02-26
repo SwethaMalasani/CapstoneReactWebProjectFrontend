@@ -15,6 +15,7 @@ const EmployeePage = () => {
     try {
       const response = await axios.get('http://localhost:3000/api/employeesystem');
       setEmployees(response.data);
+      console.log("Employees has been fetched");
     } catch (error) {
       console.error('Error fetching employees:', error);
     }
@@ -46,10 +47,13 @@ const EmployeePage = () => {
       await axios.put(`http://localhost:3000/api/employeesystem/${employeeId}`, updatedData);
       setEmployees(employees.map((employee) =>
         employee.employeeId === employeeId ? { ...employee, ...updatedData } : employee
-      ));
+      )
+     
+    );
     } catch (error) {
       console.error('Error updating employee:', error);
     }
+
   };
 
   // Handle search input change
@@ -69,8 +73,8 @@ const EmployeePage = () => {
   }, []);
 
   return (
-    <div classname="employee">
-      <h2>Employee Management</h2>
+    <div className="employee">
+      <h2>Employee Management CRUD operations</h2>
 
       {/* Search Bar */}
       <div className="search-container">
@@ -88,13 +92,14 @@ const EmployeePage = () => {
           Create Employee
         </button>
       </div>
-     
+     <div classname="EmployeeList">
       {/* Display Employee List, filtered by search term */}
       <EmployeeList
         employees={filteredEmployees}
         deleteEmployee={deleteEmployee}
         updateEmployee={updateEmployee}
       />
+      </div>
     </div>
   );
 };

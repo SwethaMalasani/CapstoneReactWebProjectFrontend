@@ -1,0 +1,91 @@
+/* Center the EmployeeList table */
+.employee-list-container {
+    display: flex;
+    flex-direction: column; /* Stack search and table vertically */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Reduce space from the search bar */
+  }
+  
+  /* Style the table */
+  table {
+    width: 80%;
+    max-width: 900px;
+    border-collapse: collapse;
+    margin-top: 10px; /* Reduced margin */
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Ensure table headers are visible */
+  thead {
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+  }
+  
+  th {
+    padding: 12px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Table rows */
+  td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Alternate row colors */
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  /* Button styles */
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  /* Delete button */
+  button:first-of-type {
+    background-color: royalblue;
+  }
+  
+  button:first-of-type:hover {
+    background-color: #c82333;
+  }
+  
+  /* Update button */
+  button:last-of-type {
+    background-color: darkgreen;
+  }
+  
+  button:last-of-type:hover {
+    background-color: #218838;
+  }
+  
+  /* Fix spacing between search bar and table */
+  .search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Reduce space between search bar and buttons */
+    margin-bottom: 10px; /* Reduce space before table */
+  }
+  
+  .search-bar {
+    padding: 8px;
+    width: 300px; /* Increase width */
+  }
+  

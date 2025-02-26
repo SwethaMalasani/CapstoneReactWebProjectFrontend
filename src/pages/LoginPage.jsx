@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../styles/LoginPage.css';
 
 function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const handleLogin = (e) => {
     e.preventDefault();
-    console.log('Logging in with', username, password);
-    // Call your backend here to authenticate the user
+    
+    // Check hardcoded credentials
+    if (username === 'swetha' && password === '1234') {
+      navigate('/employees'); // Redirect to Employee Page
+    } else {
+      alert('Invalid credentials, please try again.');
+    }
   };
 
   return (
