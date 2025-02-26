@@ -119,7 +119,7 @@ I look for creative solutions to real world problems and think of technical ways
 [Developer LinkedIn]: Swetha Malasani- https://www.linkedin.com/in/swetha-malasani-943652338/
 
 ## Special Mention: Supporters of the build
-* Developer(s) - Sahithi Mukkisa-linkedin:linkedin.com/in/sahithi-mukkisa-80a140341
+* Developer(s) - Sahithi Mukkisa- https://www.linkedin.com/in/sahithi-mukkisa-80a140341/
 
 
 
