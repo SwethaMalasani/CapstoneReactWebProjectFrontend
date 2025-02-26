@@ -13,7 +13,7 @@ const EmployeePage = () => {
   // Fetch employees
   const fetchEmployees = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/employeesystem');
+      const response = await axios.get('https://capstonereactwebprojectbackend.onrender.com/api/employeesystem');
       setEmployees(response.data);
       console.log("Employees has been fetched");
     } catch (error) {
@@ -24,7 +24,7 @@ const EmployeePage = () => {
   // Add new employee function
   const addEmployee = async (newEmployee) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/employeesystem', newEmployee);
+      const response = await axios.post('https://capstonereactwebprojectbackend.onrender.com/api/employeesystem', newEmployee);
       setEmployees([...employees, response.data]);
     } catch (error) {
       console.error('Error adding employee:', error);
@@ -34,7 +34,7 @@ const EmployeePage = () => {
   // Delete employee function
   const deleteEmployee = async (employeeId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/employeesystem/${employeeId}`);
+      await axios.delete(`https://capstonereactwebprojectbackend.onrender.com/api/employeesystem/${employeeId}`);
       setEmployees(employees.filter((employee) => employee.employeeId !== employeeId));
     } catch (error) {
       console.error('Error deleting employee:', error);
@@ -44,7 +44,7 @@ const EmployeePage = () => {
   // Update employee function
   const updateEmployee = async (employeeId, updatedData) => {
     try {
-      await axios.put(`http://localhost:3000/api/employeesystem/${employeeId}`, updatedData);
+      await axios.put(`https://capstonereactwebprojectbackend.onrender.com/api/employeesystem/${employeeId}`, updatedData);
       setEmployees(employees.map((employee) =>
         employee.employeeId === employeeId ? { ...employee, ...updatedData } : employee
       )

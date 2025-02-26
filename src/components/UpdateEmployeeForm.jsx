@@ -18,7 +18,7 @@ const UpdateEmployeeForm = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/employeesystem/${employeeId}`);
+        const response = await axios.get(`https://capstonereactwebprojectbackend.onrender.com/api/employeesystem/${employeeId}`);
         setEmployee(response.data); // Set the fetched employee data
       } catch (error) {
         console.error('Error fetching employee:', error);
@@ -47,7 +47,7 @@ const UpdateEmployeeForm = () => {
       };
 
       // Send the PUT request to update the employee
-      const response = await axios.put(`http://localhost:3000/api/employeesystem/${employeeId}`, updatedData);
+      const response = await axios.put(`https://capstonereactwebprojectbackend.onrender.com/api/employeesystem/${employeeId}`, updatedData);
 
       // On success, redirect to the employee list page
       alert('Employee updated successfully!');

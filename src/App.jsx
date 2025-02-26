@@ -17,7 +17,7 @@ function App() {
 
   const addEmployee = async (employee) => {
     try {
-      const response = await axios.post('http://localhost:3000/api/employeesystem', employee);
+      const response = await axios.post('https://capstonereactwebprojectbackend.onrender.com/api/employeesystem', employee);
       setEmployees([...employees, response.data]);
       setFilteredEmployees([...employees, response.data]);
     } catch (error) {
