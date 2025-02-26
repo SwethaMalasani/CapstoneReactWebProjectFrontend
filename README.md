@@ -2,6 +2,9 @@
 
 Employment Management System
 
+**Backend git link**
+https://github.com/SwethaMalasani/CapstoneReactWebProjectbackend.git
+
 #### INSERT 1 SENTANCE SUMMARY OF YOUR APPLICATION/GAME HERE
 
 An Employment Management System (EMS) is a software application or platform designed to 
@@ -59,8 +62,7 @@ Delete         : User can Delete the employee and will be removed from employees
 
 
 
-## Trello Planning
-* Link to trello or planning board - ex: https://trello.com/b/2jeHdFcV/project-1-connect-4
+
 
 ## <a name="design"></a>Design
 * Descrition of what inspired your design. Ex: Design elements implemented using HTML5 and CSS3. 
@@ -102,10 +104,10 @@ Develop leave management
 Login as of now hardcoded make it verify username based on database data existence.
 
 ## <a name="deployment"></a>Deployed Link
-[Netlify]([https://wonderful-brahmagupta-6a75d3.netlify.com](https://connect4pc.netlify.app/))
+Render: https://capstonereactwebprojectfrontend.onrender.com
 
 * You can view the repository:
-[Github.com](https://github.com/Gr8ness21/Connect-4)
+[Github.com]
 https://github.com/SwethaMalasani/CapstoneReactWebProjectFrontend.git #frontend
 https://github.com/SwethaMalasani/CapstoneReactWebProjectbackend.git  #backend
 
@@ -117,7 +119,7 @@ I look for creative solutions to real world problems and think of technical ways
 [Developer LinkedIn]: Swetha Malasani- https://www.linkedin.com/in/swetha-malasani-943652338/
 
 ## Special Mention: Supporters of the build
-* Developer(s) - Sahithi Mukkisa-linkedin:linkedin.com/in/sahithi-mukkisa-80a140341
+* Developer(s) - Sahithi Mukkisa- https://www.linkedin.com/in/sahithi-mukkisa-80a140341/
 
 
 
