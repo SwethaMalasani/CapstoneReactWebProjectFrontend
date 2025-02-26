@@ -104,10 +104,10 @@ Develop leave management
 Login as of now hardcoded make it verify username based on database data existence.
 
 ## <a name="deployment"></a>Deployed Link
-[Netlify]([https://wonderful-brahmagupta-6a75d3.netlify.com](https://connect4pc.netlify.app/))
+Render: https://capstonereactwebprojectfrontend.onrender.com
 
 * You can view the repository:
-[Github.com](https://github.com/Gr8ness21/Connect-4)
+[Github.com]
 https://github.com/SwethaMalasani/CapstoneReactWebProjectFrontend.git #frontend
 https://github.com/SwethaMalasani/CapstoneReactWebProjectbackend.git  #backend
 
