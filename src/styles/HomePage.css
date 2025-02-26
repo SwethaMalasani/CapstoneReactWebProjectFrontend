@@ -1,3 +1,5 @@
+
+
 /* Reset default padding and margin */
 * {
   margin: 0;
@@ -13,51 +15,6 @@
   width: 100vw;
   min-height: 100vh;
   background-size: cover;
-}
-
-/* Home section */
-.home {
-  display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
-  text-align: center; /* Ensures text is centered */
-  width: 100vw;
-  height: 100vh;
-  /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtkBv-p8bEUjPcqb1c1AmEgXNI3wVA4S3AGA&s") no-repeat center center/cover; */
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
-
-.homeimage h1 {
-  font-size: 2rem;
-  color: black;
-}
-
-.homeimage p {
-  font-size: 1.2rem;
-  color: rebeccapurple;
-  font-weight: bold;
-}
-
-.nav-links {
-  margin-top: 20px;
-}
-
-.nav-links .btn {
-  text-decoration: none;
-  background-color: white;
-  color: black;
-  padding: 10px 20px;
-  margin: 5px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.nav-links .btn:hover {
-  background-color: palegreen;
 }
 
 /* HR Section */
@@ -95,21 +52,27 @@
   border-radius: 5px;
 }
 
+/* Animated Text */
+.animated-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.3;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(5px);
+  }
+}
+
 /* Responsive Fixes */
 @media (max-width: 768px) {
-  .home {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .homeimage h1 {
-    font-size: 1.5rem;
-  }
-
-  .homeimage p {
-    font-size: 1rem;
-  }
-
   .hr-section {
     padding: 20px;
   }

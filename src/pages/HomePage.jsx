@@ -5,25 +5,11 @@ import '../styles/HomePage.css';
 function HomePage() {
   return (
     <div className="homepagesscren">
-      {/* Home Section */}
-      {/* <div className="home">  */}
-        {/* <div className="homeimage"> */}
-          {/* <h1>Welcome to the Employee Management System</h1> */}
-          {/* <p>Your go-to system for managing employees!</p> */}
-        {/* </div> */}
-
-        {/* <div className="nav-links"> */}
-          {/* <Link to="/login" className="btn">Login</Link> */}
-          {/* <Link to="/contact-us" className="btn">Contact Us</Link> */}
-          {/* <Link to="/employees" className="btn">Employees</Link> */}
-        {/* </div> */}
-       {/* </div> */}
-
       {/* HR Section */}
       <div className="hr-section">
         <h1>Welcome</h1>
         <h2>HR Management Solutions</h2>
-        <p>Empowering leaders to drive business success through effective HR solutions.</p>
+        <p className="animated-text">Empowering leaders to drive business success through effective HR solutions.</p>
 
         <div className="hr-images">
           <img src="https://primepay.com/wp-content/uploads/Growing-Wheel-PP-10.25.24.gif" alt="HR Management" />
