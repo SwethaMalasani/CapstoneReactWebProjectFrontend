@@ -92,7 +92,7 @@ const EmployeePage = () => {
           Create Employee
         </button>
       </div>
-     <div classname="EmployeeList">
+     <div className="EmployeeList">
       {/* Display Employee List, filtered by search term */}
       <EmployeeList
         employees={filteredEmployees}
